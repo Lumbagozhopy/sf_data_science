@@ -1,0 +1,17 @@
+import numpy as np 
+number = np.random.randint(1, 101)
+count = 0 
+while True:
+    count+=1
+    predict_number = int(input("Dt:"))
+    if predict_number > number:
+        print('Num is greater!')
+    elif predict_number < number:
+        print('Num should be greater')
+    else:
+        print('Congrats The number is {}. Number of trials: {}'.format(number, count))
+        break
+        
+
+       
+        
